@@ -30,7 +30,7 @@
 	$\text{E -> (E)}$
 	En effet number est un terminal étant donné qu'il ne peut être dérivé.
 
-**Alphabet: A est un ensemble de terminaux, utilisé dans les règles.
+**Alphabet:** A est un ensemble de terminaux, utilisé dans les règles.
 
 **Exemple:**
 	$\text{A =}$ $\set{number, (, ), +}$
