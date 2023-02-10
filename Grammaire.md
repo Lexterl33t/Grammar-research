@@ -9,9 +9,15 @@
 	$\text{D -> Number}$
 	Etant donnée un set V nous dérivons chaque non terminal par des règles.
 	
+	
+	
 **Axiome de depart:** L'axiome de départ S est un non-terminal c'est le premier non-terminal qui va être dérivé.
 
+
+
 **Non terminaux:** C'est un ensemble V de valeur litteraux qui peuvent avoir plusieurs règle.
+
+
 
 **Exemple:**
 	$\text{V =}$ $\set{E}$
@@ -20,7 +26,11 @@
 	$\text{E -> EX}$
 	En effet comme vous pouvez le voir nous avons appliqué plusieurs règle à même non Terminal.
 
+
+
 **Terminaux:** C'est un ensemble de valeur litteraux qui ont une valeur fixe.
+
+
 
 **Exemple:**
 	$\text{V =}$ $\set{E}$
@@ -29,34 +39,45 @@
 	$\text{E -> E+E}$
 	$\text{E -> (E)}$
 	En effet number est un terminal étant donné qu'il ne peut être dérivé.
+	
+	
 
 **Alphabet:** A est un ensemble de terminaux, utilisé dans les règles.
 
+
+
+
 **Exemple:**
 	$\text{A =}$ $\set{number, (, ), +}$
+	
+	
 
 **Exemple règle arithmétique:**
 	$\text{A =}$ $\set{number, (, ), +}$
 	$\text{V =}$ $\set{E}$
-	Règle:
-		E -> number
-		E -> (E)
-		E -> E+E
-		E -> E/E
-		E -> E-E
-	Ou:
-		E -> number
-			    | (E)
-			    | E+E
-			    | E/E
-			    | E-E
-	Prenons à présent une opération arithmétique et regardons si celle-ci est conforme à notre règle syntaxique.
+Règle:
+E -> number
+E -> (E)
+E -> E+E
+E -> E/E
+E -> E-E
+Ou:
+E -> number
+    | (E)
+    | E+E
+    | E/E
+    | E-E
+			    
+			    
+Prenons à présent une opération arithmétique et regardons si celle-ci est conforme à notre règle syntaxique.
+
+$\text{2+5 / (3+6)}$
+Linéaire représentation:
+$\text{E -> E+E -> E/E -> E / (E) -> E+E -> E+E / (E+E)}$
+number + number / (number + number)
+Nous avons donc dérivé notre opération de manière linéaire.
+
 	
-	$\text{2+5 / (3+6)}$
-	Linéaire représentation:
-	$\text{E -> E+E -> E/E -> E / (E) -> E+E -> E+E / (E+E)}$
-	number + number / (number + number)
-	Nous avons donc dérivé notre opération de manière linéaire.
 
 Epsilon: c'est simplement lorsque la dérivation est vide.
 
